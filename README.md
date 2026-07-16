@@ -1,5 +1,38 @@
 # Multi-Agent Temporal Workflow (Template)
 
+## Architecture Diagram
+
+                 Client
+
+                    │
+
+              POST /run
+
+                    │
+
+               FastAPI API
+
+                    │
+
+         Start Temporal Workflow
+
+                    │
+
+             Temporal Worker
+
+                    │
+
+      Planner → Researcher → Writer → Reviewer
+
+                    │
+
+             Docker Sandbox
+
+                    │
+
+          Structured JSON Trace
+
+          
 ## Overview
 This project is a simple reference implementation Multi-Agent Temporal Workflow.
 
