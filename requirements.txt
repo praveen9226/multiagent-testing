@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+temporalio
+docker
+sse-starlette
+pydantic

@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  temporal:
+    image: temporalio/auto-setup:latest
+    ports: ["7233:7233"]
+  temporal-ui:
+    image: temporalio/ui:latest
+    environment:
+      TEMPORAL_ADDRESS: temporal:7233
+    ports: ["8080:8080"]
